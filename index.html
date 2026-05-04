@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tư 79/2024/TT-BCA - Hướng dẫn đăng ký xe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-emblem">
+            <div class="emblem-star">★</div>
+        </div>
+        <div class="header-content">
+            <h1 class="header-title">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h1>
+            <p class="header-subtitle">Độc lập - Tự do - Hạnh phúc</p>
+            <div class="header-divider"></div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav-toggle" id="navToggle" aria-label="Menu điều hướng">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#gioi-thieu" class="nav-link">Giới thiệu</a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Cấp mới
+                        <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M2 4L6 8L10 4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#cap-moi-ho-so">Hồ sơ cấp mới</a></li>
+                        <li><a href="#cap-moi-giay-khai">Giấy khai đăng ký</a></li>
+                        <li><a href="#cap-moi-giay-to">Giấy tờ của chủ xe</a></li>
+                        <li><a href="#cap-moi-nguon-goc">Chứng nhận nguồn gốc</a></li>
+                        <li><a href="#cap-moi-so-huu">Quyền sở hữu hợp pháp</a></li>
+                        <li><a href="#cap-moi-tai-chinh">Nghĩa vụ tài chính</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Đổi CNĐK & Biển số
+                        <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M2 4L6 8L10 4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#doi-truong-hop">Trường hợp đổi</a></li>
+                        <li><a href="#doi-ho-so">Hồ sơ đổi</a></li>
+                        <li><a href="#doi-thu-tuc">Thủ tục đổi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Cấp lại
+                        <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M2 4L6 8L10 4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#cap-lai-thu-tuc">Thủ tục cấp lại</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Thu hồi
+                        <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M2 4L6 8L10 4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#thu-hoi-ho-so">Hồ sơ thu hồi</a></li>
+                        <li><a href="#thu-hoi-thu-tuc">Thủ tục thu hồi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Biển số đấu giá
+                        <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M2 4L6 8L10 4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#dau-gia-ho-so">Hồ sơ đăng ký</a></li>
+                        <li><a href="#dau-gia-thu-tuc">Thủ tục đăng ký</a></li>
+                        <li><a href="#dau-gia-quan-ly">Quản lý biển số</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Giới thiệu -->
+            <section id="gioi-thieu" class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">GIỚI THIỆU</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <p class="lead-text">Hướng dẫn về đăng ký xe cơ giới, xe máy chuyên dụng theo <strong>Thông tư 79/2024/TT-BCA</strong> của Bộ Công an.</p>
+                    <p>Tài liệu này cung cấp đầy đủ thông tin về các thủ tục:</p>
+                    <ul class="content-list">
+                        <li>Cấp mới chứng nhận đăng ký xe, biển số xe</li>
+                        <li>Đổi chứng nhận đăng ký xe, biển số xe</li>
+                        <li>Cấp lại chứng nhận đăng ký xe, biển số xe</li>
+                        <li>Thu hồi chứng nhận đăng ký xe, biển số xe</li>
+                        <li>Đăng ký, cấp biển số xe trúng đấu giá</li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Nguồn:</strong> <a href="https://thuvienphapluat.vn/van-ban/Giao-thong-Van-tai/Thong-tu-79-2024-TT-BCA-cap-thu-hoi-chung-nhan-dang-ky-xe-bien-so-xe-co-gioi-xe-may-chuyen-dung-634265.aspx" target="_blank" rel="noopener">Thư viện Pháp luật</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MỤC 1: CẤP MỚI -->
+            <section id="cap-moi-ho-so" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 8</div>
+                    <h2 class="section-title">HỒ SƠ CẤP MỚI CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <p>Cấp mới chứng nhận đăng ký xe, biển số xe (sau đây gọi chung là đăng ký xe lần đầu) gồm các giấy tờ sau:</p>
+                    <ol class="numbered-list">
+                        <li>Giấy khai đăng ký xe.</li>
+                        <li>Giấy tờ của chủ xe. (Điều 10)</li>
+                        <li>Chứng nhận nguồn gốc xe. (Điều 11)</li>
+                        <li>Chứng nhận quyền sở hữu hợp pháp. (Điều 12)</li>
+                        <li>Chứng từ hoàn thành nghĩa vụ tài chính. (Điều 13)</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="cap-moi-giay-khai" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 9</div>
+                    <h2 class="section-title">GIẤY KHAI ĐĂNG KÝ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Dịch vụ công trực tuyến một phần:</h3>
+                        <p>Chủ xe đăng nhập trên cổng dịch vụ công và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe, ký số. Trường hợp không có ký số thì chủ xe in giấy khai đăng ký xe từ cổng dịch vụ công, ký, ghi rõ họ, tên và đóng dấu (nếu là cơ quan, tổ chức).</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Dịch vụ công trực tuyến toàn trình:</h3>
+                        <p>Chủ xe sử dụng tài khoản định danh điện tử mức độ 2 để đăng nhập vào cổng dịch vụ công hoặc ứng dụng định danh quốc gia và kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe và chủ xe không cần ký.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">3. Đăng ký xe trực tiếp tại cơ quan:</h3>
+                        <p>Chủ xe kê khai chính xác, đầy đủ, trung thực các nội dung quy định trong mẫu giấy khai đăng ký xe.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cap-moi-giay-to" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 10</div>
+                    <h2 class="section-title">GIẤY TỜ CỦA CHỦ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Chủ xe là người Việt Nam:</h3>
+                        <p>Sử dụng tài khoản định danh điện tử mức độ 2 để thực hiện đăng ký xe trên cổng dịch vụ công hoặc ứng dụng định danh quốc gia hoặc xuất trình căn cước hoặc thẻ căn cước công dân, hộ chiếu.</p>
+                        <div class="note-box">
+                            <strong>Đối với lực lượng vũ trang:</strong> Xuất trình giấy chứng minh Công an nhân dân hoặc chứng minh Quân đội nhân dân hoặc giấy xác nhận của thủ trưởng cơ quan, đơn vị công tác từ cấp trung đoàn, phòng, Công an cấp huyện hoặc tương đương trở lên (trường hợp chưa được cấp giấy chứng minh của lực lượng vũ trang).
+                        </div>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Chủ xe là người nước ngoài:</h3>
+                        <p><strong>a) Thành viên cơ quan đại diện ngoại giao:</strong> Xuất trình chứng minh thư ngoại giao, chứng minh thư công vụ, chứng minh thư lãnh sự, chứng minh thư lãnh sự danh dự, chứng minh thư (phổ thông), còn giá trị sử dụng và nộp giấy giới thiệu của Cục Lễ tân Nhà nước, Bộ Ngoại giao hoặc Sở Ngoại vụ.</p>
+                        <p><strong>b) Người nước ngoài sinh sống tại Việt Nam:</strong> Xuất trình thẻ thường trú hoặc thẻ tạm trú (còn thời hạn cư trú tại Việt Nam từ 06 tháng trở lên).</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">3. Chủ xe là tổ chức:</h3>
+                        <p><strong>a) Tổ chức thông thường:</strong> Sử dụng tài khoản định danh điện tử mức độ 2 để thực hiện thủ tục đăng ký xe trên cổng dịch vụ công; trường hợp tổ chức chưa được cấp tài khoản định danh điện tử mức độ 2 thì xuất trình thông báo mã số thuế hoặc quyết định thành lập.</p>
+                        <div class="note-box">
+                            <strong>Lưu ý:</strong> Trường hợp xe hoạt động kinh doanh vận tải bằng ô tô thì phải có thêm bản sao giấy phép kinh doanh vận tải bằng ô tô do Sở Giao thông vận tải cấp kèm theo bản chính để đối chiếu.
+                        </div>
+                        <p><strong>b) Cơ quan đại diện ngoại giao:</strong> Giấy giới thiệu của Cục Lễ tân Nhà nước, Bộ Ngoại giao hoặc Sở Ngoại vụ.</p>
+                        <p><strong>c) Người được giới thiệu:</strong> Phải nộp giấy tờ của chủ xe theo quy định và xuất trình giấy tờ tùy thân.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">4. Người được ủy quyền:</h3>
+                        <p>Ngoài giấy tờ của chủ xe, còn phải xuất trình giấy tờ tùy thân và nộp văn bản ủy quyền có công chứng hoặc chứng thực theo quy định.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cap-moi-nguon-goc" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 11</div>
+                    <h2 class="section-title">CHỨNG NHẬN NGUỒN GỐC XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Đối với xe nhập khẩu:</h3>
+                        <p><strong>a)</strong> Dữ liệu hải quan điện tử được hệ thống đăng ký, quản lý xe tiếp nhận từ cổng dịch vụ công hoặc cơ sở dữ liệu của cơ quan hải quan.</p>
+                        <p><strong>b)</strong> Trường hợp xe không có dữ liệu hải quan điện tử thì chứng nhận nguồn gốc là:</p>
+                        <ul class="content-list">
+                            <li>Tờ khai nguồn gốc xe nhập khẩu (đối với xe nhập khẩu theo hợp đồng thương mại)</li>
+                            <li>Giấy tạm nhập khẩu xe (đối với xe tạm nhập, tái xuất của các đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao)</li>
+                            <li>Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe máy chuyên dùng nhập khẩu</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Đối với xe sản xuất, lắp ráp:</h3>
+                        <p><strong>a)</strong> Dữ liệu điện tử phiếu kiểm tra chất lượng xuất xưởng được hệ thống đăng ký, quản lý xe tiếp nhận từ cổng dịch vụ công hoặc cơ sở dữ liệu của cơ quan đăng kiểm.</p>
+                        <p><strong>b)</strong> Trường hợp xe chưa có dữ liệu điện tử phiếu kiểm tra chất lượng xuất xưởng thì chứng nhận nguồn gốc xe là phiếu kiểm tra chất lượng xuất xưởng theo quy định (bản giấy).</p>
+                        <p><strong>c)</strong> Xe của lực lượng Công an nhân dân sản xuất, lắp ráp: Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng sản xuất, lắp ráp theo quy định.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">3. Đối với xe bị tịch thu:</h3>
+                        <p><strong>a)</strong> Quyết định tịch thu phương tiện hoặc quyết định xác lập quyền sở hữu toàn dân đối với xe bị tịch thu theo quy định của pháp luật hoặc trích lục bản án nội dung tịch thu phương tiện là bản chính cấp cho từng xe, trong đó phải ghi đầy đủ đặc điểm cơ bản của xe: Nhãn hiệu, số loại, loại xe, số máy, số khung, dung tích xi lanh, năm sản xuất. Xe phải nguyên chiếc, tổng thành máy, tổng thành khung cùng kiểu loại.</p>
+                        <p><strong>b)</strong> Hóa đơn bán tài sản công hoặc hóa đơn bán tài sản nhà nước hoặc hóa đơn bán tài sản tịch thu theo quy định của pháp luật.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cap-moi-so-huu" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 12</div>
+                    <h2 class="section-title">CHỨNG NHẬN QUYỀN SỞ HỮU HỢP PHÁP</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <p>Chứng nhận quyền sở hữu hợp pháp là chứng từ chuyển quyền sở hữu xe, gồm một trong các chứng từ sau đây:</p>
+                    <ol class="numbered-list">
+                        <li>Dữ liệu hóa đơn điện tử được hệ thống đăng ký, quản lý xe tiếp nhận từ cổng dịch vụ công hoặc cơ sở dữ liệu của cơ quan quản lý thuế. Trường hợp xe chưa có dữ liệu hoá đơn điện tử thì phải có hóa đơn giấy hoặc hóa đơn được chuyển đổi từ hóa đơn điện tử sang hóa đơn giấy theo quy định của pháp luật.</li>
+                        <li>Quyết định của cơ quan có thẩm quyền hoặc văn bản chuyển nhượng, trao đổi, tặng cho, để thừa kế xe, chứng từ tài chính của xe theo quy định của pháp luật.</li>
+                        <li>Đối với xe của cơ quan Công an thanh lý: Quyết định thanh lý xe của cấp có thẩm quyền và hóa đơn theo quy định.</li>
+                        <li>Đối với xe của cơ quan Quân đội thanh lý: Văn bản xác nhận xe đã được loại khỏi trang bị quân sự của Cục Xe - Máy, Bộ Quốc phòng và hóa đơn theo quy định.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="cap-moi-tai-chinh" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 13</div>
+                    <h2 class="section-title">CHỨNG TỪ HOÀN THÀNH NGHĨA VỤ TÀI CHÍNH</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <p>Chứng từ hoàn thành nghĩa vụ tài chính là chứng từ nộp lệ phí trước bạ xe (trừ xe máy chuyên dùng), gồm một trong các chứng từ sau đây:</p>
+                    <ol class="numbered-list">
+                        <li>Dữ liệu điện tử nộp lệ phí trước bạ xe được hệ thống đăng ký, quản lý xe tiếp nhận từ cổng dịch vụ công hoặc cơ sở dữ liệu của cơ quan quản lý thuế.</li>
+                        <li>Trường hợp xe chưa có dữ liệu điện tử nộp lệ phí trước bạ xe thì phải có giấy nộp tiền vào ngân sách Nhà nước hoặc chứng từ nộp lệ phí trước bạ xe khác theo quy định; đối với xe được miễn lệ phí trước bạ xe thì phải có thông báo nộp lệ phí trước bạ xe của cơ quan quản lý thuế, trong đó có thông tin miễn lệ phí trước bạ xe.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- MỤC 3: ĐỔI CHỨNG NHẬN -->
+            <section id="doi-truong-hop" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 18</div>
+                    <h2 class="section-title">TRƯỜNG HỢP ĐỔI CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <ol class="numbered-list">
+                        <li>Chứng nhận đăng ký xe, biển số xe bị mờ, hỏng.</li>
+                        <li>Xe cải tạo; xe thay đổi màu sơn.</li>
+                        <li>Xe đã đăng ký, cấp biển số xe nền màu trắng, chữ và số màu đen đổi sang biển số xe nền màu vàng, chữ và số màu đen (xe hoạt động kinh doanh vận tải bằng ô tô) và ngược lại.</li>
+                        <li>Thay đổi các thông tin của chủ xe (tên chủ xe, số định danh) hoặc chủ xe có nhu cầu đổi chứng nhận đăng ký xe theo địa chỉ mới.</li>
+                        <li>Chứng nhận đăng ký xe hết thời hạn sử dụng.</li>
+                        <li>Đổi chứng nhận đăng ký xe cũ, biển số xe cũ sang chứng nhận đăng ký xe, biển số xe theo quy định tại Thông tư này; chủ xe có nhu cầu đổi biển ngắn sang biển dài hoặc ngược lại.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="doi-ho-so" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 19</div>
+                    <h2 class="section-title">HỒ SƠ ĐỔI CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <ol class="numbered-list">
+                        <li>Giấy khai đăng ký xe.</li>
+                        <li>Giấy tờ của chủ xe theo quy định tại Điều 10 Thông tư này.</li>
+                        <li>Chứng nhận đăng ký xe (trường hợp đổi chứng nhận đăng ký xe) hoặc biển số xe (trường hợp đổi biển số xe).</li>
+                        <li>Một số giấy tờ khác:
+                            <ul class="content-list">
+                                <li><strong>a)</strong> Xe cải tạo thay đổi tổng thành máy, tổng thành khung thì phải có thêm chứng nhận nguồn gốc, chứng từ nộp lệ phí trước bạ, chứng từ chuyển quyền sở hữu của tổng thành máy hoặc tổng thành khung đó theo quy định.</li>
+                                <li><strong>b)</strong> Xe cải tạo thay tổng thành máy của xe đã đăng ký thì phải có chứng nhận thu hồi chứng nhận đăng ký xe, biển số của xe có tổng thành đó.</li>
+                                <li><strong>c)</strong> Xe cải tạo thay đổi kiểu loại xe thì phải có thêm giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng cải tạo theo quy định.</li>
+                                <li><strong>d)</strong> Trường hợp đổi biển số xe nền màu vàng sang biển số xe nền màu trắng, phải có thêm văn bản thu hồi giấy phép kinh doanh vận tải hoặc văn bản thu hồi phù hiệu, biển hiệu.</li>
+                                <li><strong>đ)</strong> Đối với trường hợp chủ xe có nhu cầu đổi chứng nhận đăng ký xe khi thay đổi trụ sở, nơi cư trú đến địa chỉ mới ngoài phạm vi đăng ký của cơ quan đổi chứng nhận đăng ký xe, biển số xe, phải có thêm giấy xác nhận hồ sơ xe.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="doi-thu-tuc" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 20</div>
+                    <h2 class="section-title">THỦ TUC ĐỔI CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Dịch vụ công trực tuyến hoặc trực tiếp:</h3>
+                        <p>Chủ xe kê khai giấy khai đăng ký xe, nộp hồ sơ đổi chứng nhận đăng ký xe, biển số xe theo quy định và nộp lệ phí theo quy định. Trường hợp xe cải tạo, thay đổi màu sơn, chủ xe phải mang xe đến để kiểm tra.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Sau khi kiểm tra hồ sơ:</h3>
+                        <p>Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe thực hiện đổi chứng nhận đăng ký xe, biển số xe theo quy định; chủ xe nhận kết quả đăng ký xe tại cơ quan đăng ký xe hoặc từ dịch vụ bưu chính công ích.</p>
+                        <div class="note-box">
+                            Trường hợp đổi chứng nhận đăng ký xe, biển số xe giữ nguyên biển số định danh; đối với xe đã đăng ký biển 3 số hoặc biển 4 số thì cấp sang biển số định danh theo quy định (thu lại chứng nhận đăng ký xe, biển 3 số hoặc biển 4 số đó).
+                        </div>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">3. Đổi chứng nhận khi chuyển địa chỉ:</h3>
+                        <p><strong>a)</strong> Chủ xe nộp chứng nhận đăng ký xe và đơn đề nghị xác nhận hồ sơ xe cho cơ quan đăng ký xe quản lý hồ sơ xe đó để được cấp giấy xác nhận hồ sơ xe.</p>
+                        <p><strong>b)</strong> Chủ xe kê khai giấy khai đăng ký xe và nộp giấy xác nhận hồ sơ xe cho cơ quan đăng ký xe tại địa chỉ mới để đổi chứng nhận đăng ký xe.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MỤC 4: CẤP LẠI -->
+            <section id="cap-lai-thu-tuc" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 21</div>
+                    <h2 class="section-title">THỦ TỤC CẤP LẠI CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Dịch vụ công trực tuyến toàn trình:</h3>
+                        <p><strong>a)</strong> Chủ xe kê khai giấy khai đăng ký xe, nộp bản chà số máy, số khung của xe qua dịch vụ bưu chính công ích cho cơ quan đăng ký xe.</p>
+                        <p><strong>b)</strong> Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe gửi thông báo cho chủ xe để nộp lệ phí đăng ký xe, phí dịch vụ bưu chính công ích trên cổng dịch vụ công để trả kết quả đăng ký xe theo quy định.</p>
+                        <p><strong>c)</strong> Chủ xe nhận chứng nhận đăng ký xe hoặc biển số xe theo quy định từ dịch vụ bưu chính công ích.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Dịch vụ công trực tuyến một phần hoặc trực tiếp:</h3>
+                        <p><strong>a)</strong> Chủ xe kê khai giấy khai đăng ký xe, nộp hồ sơ và nộp lệ phí theo quy định.</p>
+                        <p><strong>b)</strong> Sau khi kiểm tra hồ sơ xe đảm bảo hợp lệ, cơ quan đăng ký xe thực hiện cấp lại chứng nhận đăng ký xe, biển số xe theo quy định; chủ xe nhận kết quả đăng ký xe tại cơ quan đăng ký xe hoặc từ dịch vụ bưu chính công ích.</p>
+                    </div>
+                    
+                    <div class="note-box">
+                        <strong>Lưu ý:</strong> Trường hợp cấp lại chứng nhận đăng ký xe, biển số xe giữ nguyên biển số định danh; đối với xe đã đăng ký biển 3 số hoặc biển 4 số thì cấp sang biển số định danh theo quy định (thu lại chứng nhận đăng ký xe, biển 3 số hoặc biển 4 số đó).
+                    </div>
+                </div>
+            </section>
+
+            <!-- MỤC 6: THU HỒI -->
+            <section id="thu-hoi-ho-so" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 25</div>
+                    <h2 class="section-title">HỒ SƠ THU HỒI CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Trường hợp chuyển quyền sở hữu xe:</h3>
+                        <p>Chuyển quyền sở hữu xe; chuyển nhượng, trao đổi, tặng cho, để thừa kế xe gắn với biển số xe trúng đấu giá thì chỉ thu hồi chứng nhận đăng ký xe; xe nhập khẩu được miễn thuế hoặc xe tạm nhập của cơ quan, tổ chức, cá nhân nước ngoài mà tái xuất, chuyển quyền sở hữu hoặc tiêu hủy; xe hết thời hạn đăng ký tại các khu kinh tế.</p>
+                        <div class="note-box">
+                            Trường hợp xe của cơ quan đại diện ngoại giao, cơ quan lãnh sự, cơ quan đại diện của tổ chức quốc tế tại Việt Nam thì phải có thêm Giấy giới thiệu của Cục Lễ tân Nhà nước, Bộ Ngoại giao hoặc Sở Ngoại vụ.
+                        </div>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Xe hết niên hạn sử dụng:</h3>
+                        <p>Trường hợp xe cơ giới hết niên hạn sử dụng, hư hỏng không sử dụng được; xe bị thải bỏ, bị mất không tìm được và chủ xe đề nghị thu hồi chứng nhận đăng ký xe, biển số xe.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">3. Cấp không đúng quy định:</h3>
+                        <p>Trường hợp cấp chứng nhận đăng ký xe, cấp biển số xe không đúng quy định của pháp luật, xe đã đăng ký nhưng phát hiện hồ sơ xe bị làm giả hoặc có kết luận của cơ quan có thẩm quyền về việc thay đổi trái phép số khung, số máy: Cơ quan đăng ký xe ra Quyết định thu hồi chứng nhận đăng ký xe, biển số xe và thu lại (không phải có hồ sơ thu hồi).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="thu-hoi-thu-tuc" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 26</div>
+                    <h2 class="section-title">THỦ TỤC THU HỒI CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Dịch vụ công trực tuyến toàn trình:</h3>
+                        <p><strong>a)</strong> Chủ xe kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe trên cổng dịch vụ công và nộp chứng nhận đăng ký xe, biển số xe cho cơ quan đăng ký xe thông qua dịch vụ bưu chính công ích.</p>
+                        <p><strong>b)</strong> Sau khi tiếp nhận, kiểm tra hồ sơ bảo đảm hợp lệ, cơ quan đăng ký xe cấp chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe, ký số và trả kết quả cho chủ xe trên cổng dịch vụ công.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Dịch vụ công trực tuyến một phần hoặc trực tiếp:</h3>
+                        <p><strong>a)</strong> Chủ xe kê khai giấy khai thu hồi chứng nhận đăng ký xe, biển số xe trên cổng dịch vụ công hoặc kê khai trực tiếp tại cơ quan đăng ký xe, nộp hồ sơ thu hồi và nhận giấy hẹn trả kết quả theo quy định.</p>
+                        <p><strong>b)</strong> Sau khi tiếp nhận, kiểm tra hồ sơ bảo đảm hợp lệ, cơ quan đăng ký xe cấp 02 bản chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe theo quy định (01 bản trả cho chủ xe; 01 bản lưu hồ sơ xe).</p>
+                        <div class="note-box">
+                            Đối với xe tạm nhập, tái xuất của các đối tượng được hưởng quyền ưu đãi miễn trừ ngoại giao cấp 03 bản chứng nhận thu hồi (02 bản trả cho chủ xe để nộp cho cơ quan hải quan và cơ quan đăng ký xe, 01 bản lưu hồ sơ xe).
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MỤC 7: BIỂN SỐ ĐẤU GIÁ -->
+            <section id="dau-gia-ho-so" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 28</div>
+                    <h2 class="section-title">HỒ SƠ ĐĂNG KÝ, CẤP BIỂN SỐ XE TRÚNG ĐẤU GIÁ</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Đối với xe chưa đăng ký:</h3>
+                        <p><strong>a)</strong> Giấy tờ đăng ký xe theo quy định tại Điều 8 Thông tư này.</p>
+                        <p><strong>b)</strong> Quyết định xác nhận biển số xe trúng đấu giá do Cục Cảnh sát giao thông cấp, còn thời hạn sử dụng; trường hợp quá thời hạn thì phải có thêm Quyết định gia hạn thời hạn đăng ký biển số xe trúng đấu giá.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Đối với xe đã đăng ký thuộc sở hữu của người trúng đấu giá:</h3>
+                        <p><strong>a)</strong> Giấy khai đăng ký xe.</p>
+                        <p><strong>b)</strong> Chứng nhận đăng ký xe và biển số xe.</p>
+                        <p><strong>c)</strong> Quyết định xác nhận biển số xe trúng đấu giá do Cục Cảnh sát giao thông cấp, còn thời hạn sử dụng.</p>
+                        <p><strong>d)</strong> Giấy xác nhận hồ sơ xe của cơ quan đăng ký xe đang quản lý hồ sơ xe (đối với trường hợp cơ quan thực hiện đăng ký, cấp biển số trúng đấu giá khác cơ quan đang quản lý hồ sơ xe).</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">3. Đối với xe nhận chuyển quyền sở hữu:</h3>
+                        <p><strong>a)</strong> Giấy khai đăng ký xe.</p>
+                        <p><strong>b)</strong> Chứng từ chuyển quyền sở hữu xe.</p>
+                        <p><strong>c)</strong> Chứng từ nộp lệ phí trước bạ xe.</p>
+                        <p><strong>d)</strong> Chứng nhận thu hồi chứng nhận đăng ký, biển số xe.</p>
+                        <p><strong>đ)</strong> Quyết định xác nhận biển số xe trúng đấu giá do Cục Cảnh sát giao thông cấp, còn thời hạn sử dụng.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dau-gia-thu-tuc" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 29</div>
+                    <h2 class="section-title">THỦ TỤC ĐĂNG KÝ XE TRÚNG ĐẤU GIÁ</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <div class="subsection">
+                        <h3 class="subsection-title">1. Đăng ký, cấp biển số xe trúng đấu giá:</h3>
+                        <p><strong>a)</strong> Kê khai giấy khai đăng ký xe.</p>
+                        <p><strong>b)</strong> Đưa xe đến cơ quan đăng ký xe để kiểm tra xe (trừ trường hợp thực hiện đăng ký xe lần đầu bằng dịch vụ công trực tuyến toàn trình); cung cấp mã hồ sơ đăng ký xe trực tuyến và nộp hồ sơ xe.</p>
+                        <p><strong>c)</strong> Sau khi cán bộ đăng ký xe kiểm tra hồ sơ xe, thực tế xe bảo đảm hợp lệ thì được cơ quan đăng ký xe cấp biển số xe trúng đấu giá; nhận giấy hẹn trả kết quả đăng ký xe, nộp lệ phí đăng ký xe theo quy định.</p>
+                        <p><strong>d)</strong> Nhận kết quả đăng ký xe tại cơ quan đăng ký xe hoặc từ dịch vụ bưu chính công ích.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">2. Chuyển quyền sở hữu xe không kèm biển số trúng đấu giá:</h3>
+                        <p><strong>a)</strong> Chủ xe nộp hồ sơ và làm thủ tục thu hồi theo quy định.</p>
+                        <p><strong>b)</strong> Tổ chức, cá nhân nhận chuyển quyền sở hữu xe nộp hồ sơ và làm thủ tục đăng ký sang tên xe theo quy định.</p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h3 class="subsection-title">3. Chuyển quyền sở hữu xe kèm biển số trúng đấu giá:</h3>
+                        <p><strong>a)</strong> Chủ xe nộp hồ sơ, làm thủ tục thu hồi theo quy định (chứng từ chuyển quyền sở hữu phải thể hiện rõ nội dung chuyển quyền sở hữu xe kèm theo biển số trúng đấu giá); không phải nộp biển số xe trúng đấu giá.</p>
+                        <p><strong>b)</strong> Tổ chức, cá nhân nhận chuyển quyền sở hữu xe nộp hồ sơ, làm thủ tục đăng ký sang tên xe (chứng từ chuyển quyền sở hữu phải thể hiện rõ nội dung chuyển quyền sở hữu xe kèm theo biển số trúng đấu giá) và được đăng ký, giữ nguyên biển số xe trúng đấu giá.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dau-gia-quan-ly" class="content-section">
+                <div class="section-header">
+                    <div class="section-number">Điều 30</div>
+                    <h2 class="section-title">QUẢN LÝ BIỂN SỐ XE TRÚNG ĐẤU GIÁ</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="article-content">
+                    <ol class="numbered-list">
+                        <li>Khi chủ xe làm thủ tục đăng ký, cấp biển số trúng đấu giá khác (biển số đăng ký lần đầu) cho xe đã đăng ký biển số trúng đấu giá thì số biển số trúng đấu giá cũ được cơ quan đăng ký xe giữ lại và cấp khi chủ xe đăng ký xe khác (chưa có biển số) thuộc sở hữu của mình.</li>
+                        <li>Khi chủ xe làm thủ tục thu hồi đăng ký, biển số trúng đấu giá (trừ trường hợp chuyển quyền sở hữu xe kèm theo biển số trúng đấu giá) thì số biển số trúng đấu giá được cơ quan đăng ký xe giữ lại và cấp khi chủ xe đăng ký xe khác (chưa có biển số) thuộc sở hữu của mình.</li>
+                        <li>Trong quá trình sử dụng, nếu chứng nhận đăng ký xe, biển số xe bị hỏng, bị mất; cải tạo xe; thay đổi màu sơn hoặc có nhu cầu đổi chứng nhận đăng ký xe khi thay đổi địa chỉ thì chủ xe làm thủ tục đổi, cấp lại theo quy định.</li>
+                    </ol>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p><strong>Nguồn tài liệu:</strong> Thông tư 79/2024/TT-BCA</p>
+                <p><strong>Trích dẫn:</strong> <a href="https://thuvienphapluat.vn/van-ban/Giao-thong-Van-tai/Thong-tu-79-2024-TT-BCA-cap-thu-hoi-chung-nhan-dang-ky-xe-bien-so-xe-co-gioi-xe-may-chuyen-dung-634265.aspx" target="_blank" rel="noopener">Thư viện Pháp luật</a></p>
+                <p class="footer-note">Tài liệu này chỉ mang tính chất tham khảo. Vui lòng tham khảo văn bản pháp luật chính thức để có thông tin đầy đủ và chính xác nhất.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
